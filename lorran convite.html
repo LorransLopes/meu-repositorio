@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>	
+	<head>
+		<style>	
+			body{
+
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 100vh;
+					font-family: 'Montserrat', sans-serif;
+				}
+			a { 
+				text-decoration:none ;
+			}
+
+			.box {
+
+				font-size:30px;
+				color:#000000;
+				height:100vh;
+				width:100vw;
+				border-radius:10px;
+				backgraumd:#be2222;
+				display: flex;
+				flex-direction:column;
+				align-items:center;
+				justify-content:center;
+				font-weight:bolder;
+			}
+
+			.botons-container {
+				display: flex;
+				justify-content:space-around;
+				align-items:center;
+				height:50px;
+				width:250px;
+			}
+
+			boton {
+				height: 40px ;
+				width: 100px;
+				background: red ;
+				color: black ;
+				font-weight: 600 ;
+				border-radius: 5px ;
+				border: 2px solid black;
+				cursor : pointer ;
+			}
+		
+		</style>
+		
+        <center><img    src="https://i.pinimg.com/736x/02/8f/ac/028fac670a4101695f0d9ccecd42fed6.jpg"/>
+            <p> Una propoposta irrecusavel </p></center>		
+	</head>
+			<body>
+				
+				<div class = "box">
+					<p>Vamo comer pizza quinta feira?</p>
+					<div class= "buttons-container">
+						<button><a 
+							href="https://youtu.be/eNNv7b9-pbQ">Sim</a></button>
+									<button id="no">Não</button>
+								</div>
+							</div>
+						</body>
+				<script>
+					let button = document.getElementById('no');
+					let height = window.innerHeight - 100;
+					let widht = window.innerWidht - 100;
+
+					button.addEventListenner('mouseover',function() {
+						button.style.position = "absolute"
+						button.style.top = Math.randon()* height + "px";
+						button.style.left = Mach.randon()* width + "px";
+				})
+				</script>
+</html>
